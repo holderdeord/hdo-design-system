@@ -1,0 +1,81 @@
+{
+  "colors": [
+    {
+      "name": "$hdo-background-color",
+      "color": "#fafafa"
+    },
+    {
+      "name": "$hdo-background-against-white",
+      "color": "rgba(51, 68, 104, 0.35)"
+    },
+    {
+      "name": "$hdo-highlight-color",
+      "color": "#fadd00"
+    },
+    {
+      "name": "$hdo-steel-blue-light",
+      "color": "#b8bfcc"
+    },
+    {
+      "name": "$hdo-steel-blue-normal",
+      "color": "#858fa3"
+    },
+    {
+      "name": "$hdo-steel-blue-dark",
+      "color": "#606b82",
+      "text": "#fff"
+    },
+    {
+      "name": "$hdo-steel-blue-extra-dark",
+      "color": "#455068",
+      "text": "#fff"
+    },
+    {
+      "name": "$hdo-outline-color",
+      "color": "#455068",
+      "text": "#fff"
+    },
+    {
+      "name": "$gray-dark",
+      "color": "#333",
+      "text": "#fff"
+    },
+    {
+      "name": "$gray",
+      "color": "#55595c",
+      "text": "#fff"
+    },
+    {
+      "name": "$gray-light",
+      "color": "#818a91"
+    },
+    {
+      "name": "$gray-lighter",
+      "color": "#eceeef"
+    },
+    {
+      "name": "$gray-lightest",
+      "color": "#f7f7f9"
+    },
+    {
+      "name": "$brand-primary",
+      "color": "#858fa3"
+    },
+    {
+      "name": "$brand-success",
+      "color": "#5cb85c"
+    },
+    {
+      "name": "$brand-info",
+      "color": "#5bc0de"
+    },
+    {
+      "name": "$brand-warning",
+      "color": "#f0ad4e"
+    },
+    {
+      "name": "$brand-danger",
+      "color": "#d9534f"
+    }
+  ]
+}

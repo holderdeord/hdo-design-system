@@ -1,0 +1,9 @@
+@import url("//fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100");
+@import url("//fonts.googleapis.com/css?family=Lato:400,700,300,100");
+
+.title-h1 { @extend h1; }
+.title-h2 { @extend h2; }
+.title-h3 { @extend h3; }
+.title-h4 { @extend h4; }
+.title-h5 { @extend h5; }
+.title-h6 { @extend h6; }

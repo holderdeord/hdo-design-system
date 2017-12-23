@@ -3,13 +3,17 @@
   "description": "A pure wrapper around patternlab-node core, the default pattern engine, and supporting frontend assets.",
   "version": "1.0.5",
   "dependencies": {
+    "autoprefixer": "^7.2.3",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
+    "bootstrap": "^4.0.0-beta.2",
     "copy-webpack-plugin": "^4.2.3",
     "event-hooks-webpack-plugin": "^1.0.0",
     "globby": "^6.1.0",
+    "node-sass": "^4.7.2",
     "patternlab-node": "^2.11.0",
+    "postcss-cli": "^4.1.1",
     "styleguidekit-assets-default": "^3.5.0",
     "styleguidekit-mustache-default": "^3.0.0",
     "webpack": "^3.10.0",
@@ -24,7 +28,11 @@
     "Paul Wright <paul@paintedbicycle.com>"
   ],
   "scripts": {
-    "start": "yarn patternlab:serve",
+    "start": "concurrently \"yarn patternlab:serve\" \"sleep 5 && npm run watch:sass\"",
+    "build": "npm run build:style && npm run build:fonts && npm run patternlab:build",
+    "build:style": "npm run build:sass && npm run build:css",
+    "build:css": "postcss --use autoprefixer -o public/css/style.css source/temp/style.css",
+    "build:sass": "node-sass --include-path=source/css source/css/style.scss > source/temp/style.css",
     "webpack:version": "webpack --v",
     "patternlab:build": "webpack --env.prod -p",
     "patternlab:serve": "webpack-dev-server --env.dev --hot --progress --colors",
@@ -34,13 +42,16 @@
     "patternlab:liststarterkits": "node patternlab.js liststarterkits",
     "patternlab:loadstarterkit": "node patternlab.js loadstarterkit",
     "patternlab:installplugin": "node patternlab.js installplugin",
-    "postinstall": "node scripts/postinstall.js"
+    "postinstall": "node scripts/postinstall.js",
+    "watch:sass": "watch 'npm run build:style' source/css --wait=1"
   },
   "license": "Apache-2.0",
   "engines": {
     "node": ">=5.0"
   },
   "devDependencies": {
+    "concurrently": "^3.5.1",
+    "watch": "^1.0.2",
     "webpack-dev-server": "^2.9.5",
     "yarn": "^1.3.2"
   }
