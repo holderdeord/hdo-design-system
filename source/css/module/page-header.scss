@@ -1,0 +1,45 @@
+@import "../variables/breakpoints";
+
+.page-header {
+  align-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  height: 3rem;
+  > * {
+    margin: auto;
+  }
+  @media screen and (min-width: $breakpoint-md-min) {
+    height: 5rem;
+  }
+}
+
+.page-header__logo {
+  width: 40px;
+  @media screen and (max-width: $breakpoint-sm-max) {
+    .hdo-logo {
+      background-size: 40px;
+      padding-top: 2rem;
+    }
+  }
+  @media screen and (min-width: $breakpoint-md-min) {
+    width: 100px;
+  }
+}
+
+.page-header__menu {
+  width: 40px;
+  @media screen and (min-width: $breakpoint-md-min) {
+    width: 100px;
+  }
+}
+
+.page-header__title {
+  h1 {
+    margin: 0;
+  }
+  @media screen and (max-width: $breakpoint-sm-max) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}

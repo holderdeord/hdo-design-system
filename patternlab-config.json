@@ -31,16 +31,22 @@
     "port": 3000
   },
   "webpackMerge": {
-    "entry":"replace"
+    "entry": "replace"
   },
   "styleGuideExcludes": [
   ],
   "defaultPattern": "all",
   "defaultShowPatternInfo": false,
-  "cleanPublic" : true,
+  "cleanPublic": true,
   "patternExtension": "mustache",
-  "ignored-extensions" : ["scss", "DS_Store", "less"],
-  "ignored-directories" : ["scss"],
+  "ignored-extensions": [
+    "scss",
+    "DS_Store",
+    "less"
+  ],
+  "ignored-directories": [
+    "scss"
+  ],
   "debug": false,
   "ishControlsHide": {
     "s": false,
@@ -60,11 +66,24 @@
     "tools-docs": false
   },
   "ishViewportRange": {
-    "s": [240, 500],
-    "m": [768, 768],
-    "l": [800, 2600]
+    "s": [
+      240,
+      500
+    ],
+    "m": [
+      768,
+      768
+    ],
+    "l": [
+      800,
+      2600
+    ]
   },
-  "patternStateCascade": ["inprogress", "inreview", "complete"],
+  "patternStateCascade": [
+    "inprogress",
+    "inreview",
+    "complete"
+  ],
   "patternStates": {
   },
   "patternExportPatternPartials": [],
@@ -78,5 +97,11 @@
     "markupOnly": ".markup-only"
   },
   "cleanOutputHtml": true,
-  "exportToGraphViz": false
+  "exportToGraphViz": false,
+  "plugins": {
+    "plugin-node-data-inheritance": {
+      "enabled": true,
+      "initialized": false
+    }
+  }
 }
