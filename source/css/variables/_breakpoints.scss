@@ -4,3 +4,7 @@ $breakpoint-md-max: 720px;
 $breakpoint-lg-max: 940px;
 $breakpoint-xl-max: 1140px;
 
+// minimum
+$breakpoint-md-min: $breakpoint-sm-max + 1px;
+$breakpoint-lg-min: $breakpoint-md-max + 1px;
+$breakpoint-xl-min: $breakpoint-lg-max + 1px;

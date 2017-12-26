@@ -1,0 +1,48 @@
+@import "../variables/breakpoints";
+@import "../variables/color";
+@import "../variables/spacing";
+
+.main-menu__modal-body {
+  @media screen and (min-width: $breakpoint-md-min) {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-gap: $spacer $spacer;
+  }
+}
+
+.main-menu__modal-close {
+  color: $hdo-background-color;
+  &:focus,
+  &:hover {
+    color: $hdo-background-color;
+  }
+}
+
+.main-menu__modal-content {
+  background-color: $gray-dark;
+  color: $hdo-background-color;
+  min-height: 100vh;
+}
+
+.main-menu__modal-dialog {
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.main-menu__modal-header {
+  border: 0;
+}
+
+.main-menu__nav {
+  margin-bottom: $spacer;
+}
+
+.main-menu__nav-link {
+  color: $hdo-background-color;
+  &:focus,
+  &:hover {
+    background-color: $gray;
+    color: $hdo-background-color;
+  }
+}

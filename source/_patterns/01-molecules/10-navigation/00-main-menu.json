@@ -1,0 +1,34 @@
+{
+  "menus": [
+    {
+      "title": "Lorem ipsum",
+      "items": [
+        {
+          "title": "Dotum foo",
+          "url": "#"
+        },
+        {
+          "title": "Dotum bar",
+          "url": "#"
+        },
+        {
+          "title": "Dotum baz",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "title": "Harum totum",
+      "items": [
+        {
+          "title": "Tatum foo",
+          "url": "#"
+        },
+        {
+          "title": "Tatum bar",
+          "url": "#"
+        }
+      ]
+    }
+  ]
+}

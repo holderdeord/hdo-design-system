@@ -13,9 +13,11 @@
     "font-awesome": "^4.7.0",
     "globby": "^6.1.0",
     "install": "^0.10.2",
+    "jquery": "^3.2.1",
     "node-sass": "^4.7.2",
     "npm": "^5.6.0",
     "patternlab-node": "^2.11.0",
+    "popper.js": "^1.12.9",
     "postcss-cli": "^4.1.1",
     "styleguidekit-assets-default": "^3.5.0",
     "styleguidekit-mustache-default": "^3.0.0",
@@ -31,7 +33,7 @@
     "Paul Wright <paul@paintedbicycle.com>"
   ],
   "scripts": {
-    "start": "concurrently \"yarn patternlab:serve\" \"sleep 5 && npm run watch:sass\"",
+    "start": "npm run build && concurrently \"yarn patternlab:serve\" \"sleep 5 && npm run watch:sass\"",
     "build": "npm run build:style && npm run build:fonts && npm run patternlab:build",
     "build:style": "npm run build:sass && npm run build:css",
     "build:css": "postcss --use autoprefixer -o public/css/style.css source/temp/style.css",
