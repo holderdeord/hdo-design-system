@@ -1,0 +1,32 @@
+<div class="main-menu">
+  <div class="main_menu__trigger-container">
+    <button class="btn main-menu__trigger" type="button" data-toggle="modal" data-target="#MainMenu">
+            {{> atoms-icon-bars }}
+        </button>
+  </div>
+  <div id="MainMenu" class="modal fade main-menu__modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog main-menu__modal-dialog" role="document">
+      <div class="modal-content main-menu__modal-content">
+        <div class="container modal-header main-menu__modal-header">
+          <button type="button" class="close main-menu__modal-close" data-dismiss="modal" aria-label="Close">
+                        {{> atoms-icon-times }}
+                    </button>
+        </div>
+        <div class="container modal-body main-menu__modal-body">
+          {{# menus }}
+          <nav class="main-menu__nav">
+            <h2 class="title-h4">{{ title }}</h2>
+            <ul class="nav flex-column">
+              {{# items }}
+              <li class="nav-item">
+                <a class="nav-link main-menu__nav-link" href="#">test</a>
+              </li>
+              {{/ items }}
+            </ul>
+          </nav>
+          {{/ menus }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
