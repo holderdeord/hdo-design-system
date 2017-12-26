@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1514324703837,
+  "timestamp": 1514328185668,
   "graph": {
     "options": {
       "directed": true,
@@ -44,7 +44,10 @@
       {
         "v": "00-atoms/10-images/01-♺-hdo-logo-with-text.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineageState": "specification",
+          "lineagePath": "../../patterns/02-organisms-00-global-01-♺-module-header/02-organisms-00-global-01-♺-module-header.rendered.html",
+          "lineagePattern": "organisms-♺-module-header"
         }
       },
       {
@@ -82,12 +85,18 @@
         "value": {
           "compileState": "clean",
           "lineageState": "specification",
-          "lineagePath": "../../patterns/02-organisms-00-global-00-page-header/02-organisms-00-global-00-page-header.rendered.html",
-          "lineagePattern": "organisms-page-header"
+          "lineagePath": "../../patterns/02-organisms-00-global-01-♺-module-header/02-organisms-00-global-01-♺-module-header.rendered.html",
+          "lineagePattern": "organisms-♺-module-header"
         }
       },
       {
         "v": "02-organisms/00-global/00-page-header.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-organisms/00-global/01-♺-module-header.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -123,6 +132,16 @@
       },
       {
         "v": "02-organisms/00-global/00-page-header.mustache",
+        "w": "01-molecules/10-navigation/00-main-menu.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/00-global/01-♺-module-header.mustache",
+        "w": "00-atoms/10-images/01-♺-hdo-logo-with-text.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/00-global/01-♺-module-header.mustache",
         "w": "01-molecules/10-navigation/00-main-menu.mustache",
         "value": {}
       }

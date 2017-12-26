@@ -5,20 +5,19 @@
   display: flex;
   flex-flow: row wrap;
   height: 3rem;
-  > * {
-    margin: auto;
-  }
   @media screen and (min-width: $breakpoint-md-min) {
     height: 5rem;
   }
 }
 
 .page-header__logo {
+  margin: auto 0;
   width: 40px;
   @media screen and (max-width: $breakpoint-sm-max) {
     .hdo-logo {
       background-size: 40px;
-      padding-top: 2rem;
+      font-size: 6px;
+      padding-top: 1rem;
     }
   }
   @media screen and (min-width: $breakpoint-md-min) {
@@ -27,6 +26,7 @@
 }
 
 .page-header__menu {
+  margin: auto 0;
   width: 40px;
   @media screen and (min-width: $breakpoint-md-min) {
     width: 100px;
@@ -34,12 +34,13 @@
 }
 
 .page-header__title {
+  margin: auto;
   h1 {
     margin: 0;
   }
   @media screen and (max-width: $breakpoint-sm-max) {
     h1 {
-      font-size: 2rem;
+      font-size: 1.25rem;
     }
   }
 }

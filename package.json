@@ -37,8 +37,8 @@
     "start": "npm run build && concurrently \"yarn patternlab:serve\" \"sleep 5 && npm run watch:sass\"",
     "build": "npm run build:style && npm run build:fonts && npm run patternlab:build",
     "build:style": "npm run build:sass && npm run build:css",
+    "build:sass": "node-sass --include-path=source/scss source/scss/style.scss > source/css/style.temp.css",
     "build:css": "postcss --use autoprefixer -o source/css/style.css source/css/style.temp.css",
-    "build:sass": "node-sass --include-path=source/css source/css/style.scss > source/css/style.temp.css",
     "build:fonts": "ncp node_modules/font-awesome/fonts source/fonts",
     "webpack:version": "webpack --v",
     "patternlab:build": "webpack --env.prod -p",
@@ -50,7 +50,7 @@
     "patternlab:loadstarterkit": "node patternlab.js loadstarterkit",
     "patternlab:installplugin": "node patternlab.js installplugin",
     "postinstall": "node scripts/postinstall.js",
-    "watch:sass": "watch 'npm run build:style' source/css --wait=1"
+    "watch:sass": "watch 'npm run build:style' source/scss --wait=1"
   },
   "license": "Apache-2.0",
   "engines": {
