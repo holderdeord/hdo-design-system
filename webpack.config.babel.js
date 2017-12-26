@@ -29,7 +29,7 @@ module.exports = env => {
         })
     },
     output: {
-      path: resolve(__dirname, 'public'),
+      path: resolve(__dirname, plConfig.paths.public.rootDir),
       filename: '[name].js'
     },
     plugins:  removeEmpty([
@@ -136,7 +136,7 @@ module.exports = env => {
       }),
     ]),
     devServer: {
-      contentBase: resolve(__dirname, 'public'),
+      contentBase: resolve(__dirname, plConfig.paths.public.rootDir),
       port: plConfig.server.port,
       open:true,
       watchContentBase: false

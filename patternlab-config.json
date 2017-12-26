@@ -15,6 +15,7 @@
       "css": "./source/css/"
     },
     "public": {
+      "rootDir": "docs",
       "root": "./docs/",
       "patterns": "./docs/patterns/",
       "data": "./docs/styleguide/data/",
