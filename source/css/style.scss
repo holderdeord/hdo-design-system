@@ -1,12 +1,13 @@
-@import 'lib/bootstrap';
+// lib
+@import "lib/bootstrap";
+@import "lib/font-awesome";
 
 // base
-@import 'base/typography';
+@import "base/typography";
 
 // layout
 
 // module
-@import "module/color-palette";
 @import "module/hdo-logo";
 
 // state
