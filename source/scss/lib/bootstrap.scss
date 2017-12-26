@@ -37,11 +37,11 @@ $link-hover-decoration: underline !default;
 // adapting to different screen sizes, for use in media queries.
 
 $grid-breakpoints: (
-        xs: 0,
-        sm: 544px,
-        md: 768px,
-        lg: 992px,
-        xl: 1200px
+        xs: $grid-breakpoints-xs-min,
+        sm: $grid-breakpoints-sm-min,
+        md: $grid-breakpoints-md-min,
+        lg: $grid-breakpoints-lg-min,
+        xl: $grid-breakpoints-xl-min
 ) !default;
 
 // Grid containers

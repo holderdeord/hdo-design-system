@@ -8,3 +8,16 @@ $breakpoint-xl-max: 1140px;
 $breakpoint-md-min: $breakpoint-sm-max + 1px;
 $breakpoint-lg-min: $breakpoint-md-max + 1px;
 $breakpoint-xl-min: $breakpoint-lg-max + 1px;
+
+// grid breakpoints
+$grid-breakpoints-xs-min: 0px;
+$grid-breakpoints-sm-min: 544px;
+$grid-breakpoints-md-min: 768px;
+$grid-breakpoints-lg-min: 992px;
+$grid-breakpoints-xl-min: 1200px;
+
+// grid breakpoints - maximum
+$grid-breakpoints-xs-max: $grid-breakpoints-sm-min - 1;
+$grid-breakpoints-sm-max: $grid-breakpoints-md-min - 1;
+$grid-breakpoints-md-max: $grid-breakpoints-lg-min - 1;
+$grid-breakpoints-lg-max: $grid-breakpoints-xl-min - 1;
