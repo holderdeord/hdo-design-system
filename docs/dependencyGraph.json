@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1514329777957,
+  "timestamp": 1514332815850,
   "graph": {
     "options": {
       "directed": true,
@@ -43,6 +43,12 @@
       },
       {
         "v": "00-atoms/10-images/01-♺-hdo-logo-with-text.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/10-images/02-♺-hdo-logo-with-link.mustache",
         "value": {
           "compileState": "clean",
           "lineageState": "specification",
@@ -137,7 +143,7 @@
       },
       {
         "v": "02-organisms/00-global/01-♺-module-header.mustache",
-        "w": "00-atoms/10-images/01-♺-hdo-logo-with-text.mustache",
+        "w": "00-atoms/10-images/02-♺-hdo-logo-with-link.mustache",
         "value": {}
       },
       {

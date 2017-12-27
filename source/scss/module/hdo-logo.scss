@@ -1,8 +1,16 @@
+@import "../variables/color";
+
 .hdo-logo {
   background: $hdo-logo no-repeat top center;
   background-size: auto 2.5rem;
+  color: $gray-dark;
+  display: block;
   margin-top: .5rem;
   padding-top: 2.5rem;
   text-align: center;
   white-space: nowrap;
+  &:focus,
+  &:hover {
+    color: $gray-dark;
+  }
 }
